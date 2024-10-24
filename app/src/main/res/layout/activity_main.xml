@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:id="@+id/main"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <!-- CardView 1 -->
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            app:cardElevation="6dp"
+            app:cardCornerRadius="8dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:padding="16dp">
+
+                <!-- Imagen de Albert Einstein -->
+                <ImageView
+                    android:layout_width="200dp"
+                    android:layout_height="200dp"
+                    android:layout_gravity="center"
+                    android:contentDescription="Imagen de Albert Einstein"
+                    android:src="@drawable/einstein" />
+
+                <!-- Breve texto -->
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Albert Einstein fue un físico teórico que desarrolló la teoría de la relatividad."
+                    android:layout_gravity="center"
+                    android:layout_marginTop="8dp"/> <!-- Corregido a layout_marginTop -->
+
+                <!-- Botón en el centro -->
+                <Button
+                    android:id="@+id/btnEinstein"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Ver en Wikipedia"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="16dp"/> <!-- Corregido a layout_marginTop -->
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <!-- CardView 2 -->
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            app:cardElevation="6dp"
+            app:cardCornerRadius="8dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:padding="16dp">
+
+                <!-- Imagen de Marie Curie -->
+                <ImageView
+                    android:layout_width="200dp"
+                    android:layout_height="200dp"
+                    android:src="@drawable/curie"
+                    android:contentDescription="Imagen de Marie Curie"
+                    android:layout_gravity="center"/>
+
+                <!-- Breve texto -->
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Marie Curie fue una científica pionera en el campo de la radiactividad."
+                    android:layout_gravity="center"
+                    android:layout_marginTop="8dp"/> <!-- Corregido a layout_marginTop -->
+
+                <!-- Botón en el centro -->
+                <Button
+                    android:id="@+id/btnCurie"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Ver en Wikipedia"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="16dp"/> <!-- Corregido a layout_marginTop -->
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <!-- CardView 3 -->
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            app:cardElevation="6dp"
+            app:cardCornerRadius="8dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:padding="16dp">
+
+                <!-- Imagen de Isaac Newton -->
+                <ImageView
+                    android:layout_width="200dp"
+                    android:layout_height="200dp"
+                    android:src="@drawable/newton"
+                    android:contentDescription="Imagen de Isaac Newton"
+                    android:layout_gravity="center"/>
+
+                <!-- Breve texto -->
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Isaac Newton fue un físico y matemático que formuló las leyes del movimiento."
+                    android:layout_gravity="center"
+                    android:layout_marginTop="8dp"/> <!-- Corregido a layout_marginTop -->
+
+                <!-- Botón en el centro -->
+                <Button
+                    android:id="@+id/btnNewton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Ver en Wikipedia"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="16dp"/> <!-- Corregido a layout_marginTop -->
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <!-- CardView 4 -->
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardElevation="6dp"
+            app:cardCornerRadius="8dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:padding="16dp">
+
+                <!-- Imagen de Nikola Tesla -->
+                <ImageView
+                    android:layout_width="200dp"
+                    android:layout_height="200dp"
+                    android:src="@drawable/tesla"
+                    android:contentDescription="Imagen de Nikola Tesla"
+                    android:layout_gravity="center"/>
+
+                <!-- Breve texto -->
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Nikola Tesla fue un inventor y ingeniero conocido por sus contribuciones a la electricidad."
+                    android:layout_gravity="center"
+                    android:layout_marginTop="8dp"/> <!-- Corregido a layout_marginTop -->
+
+                <!-- Botón en el centro -->
+                <Button
+                    android:id="@+id/btnTesla"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Ver en Wikipedia"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="16dp"/> <!-- Corregido a layout_marginTop -->
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+    </LinearLayout>
+</ScrollView>
